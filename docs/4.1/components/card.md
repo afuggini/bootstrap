@@ -6,15 +6,7 @@ group: components
 toc: true
 ---
 
-## About
-
-A **card** is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
-
 ## Example
-
-Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no `margin` by default, so use [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) as needed.
-
-Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
@@ -30,11 +22,7 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
 
 ## Content types
 
-Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what's supported.
-
 ### Body
-
-The building block of a card is the `.card-body`. Use it whenever you need a padded section within a card.
 
 {% capture example %}
 <div class="card">
@@ -46,10 +34,6 @@ The building block of a card is the `.card-body`. Use it whenever you need a pad
 {% include example.html content=example %}
 
 ### Titles, text, and links
-
-Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
-
-Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
@@ -66,8 +50,6 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 
 ### Images
 
-`.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
-
 {% capture example %}
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
@@ -79,8 +61,6 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 {% include example.html content=example %}
 
 ### List groups
-
-Create lists of content in a card with a flush list group.
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
@@ -109,8 +89,6 @@ Create lists of content in a card with a flush list group.
 
 ### Kitchen sink
 
-Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
-
 {% capture example %}
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
@@ -133,8 +111,6 @@ Mix and match multiple content types to create the card you need, or throw every
 
 ### Header and footer
 
-Add an optional header and/or footer within a card.
-
 {% capture example %}
 <div class="card">
   <div class="card-header">
@@ -148,8 +124,6 @@ Add an optional header and/or footer within a card.
 </div>
 {% endcapture %}
 {% include example.html content=example %}
-
-Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
 {% capture example %}
 <div class="card">
@@ -197,11 +171,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
 ## Sizing
 
-Cards assume no specific `width` to start, so they'll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
-
 ### Using grid markup
-
-Using the grid, wrap cards in columns and rows as needed.
 
 {% capture example %}
 <div class="row">
@@ -229,8 +199,6 @@ Using the grid, wrap cards in columns and rows as needed.
 
 ### Using utilities
 
-Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/sizing/) to quickly set a card's width.
-
 {% capture example %}
 <div class="card w-75">
   <div class="card-body">
@@ -252,8 +220,6 @@ Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.
 
 ### Using custom CSS
 
-Use custom CSS in your stylesheets or as inline styles to set a width.
-
 {% capture example %}
 <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -266,8 +232,6 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
 {% include example.html content=example %}
 
 ## Text alignment
-
-You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment).
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
@@ -297,8 +261,6 @@ You can quickly change the text alignment of any card—in its entirety or speci
 {% include example.html content=example %}
 
 ## Navigation
-
-Add some navigation to a card's header (or block) with Bootstrap's [nav components]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/navs/).
 
 {% capture example %}
 <div class="card text-center">
@@ -350,11 +312,7 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
 
 ## Images
 
-Cards include a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
-
 ### Image caps
-
-Similar to headers and footers, cards can include top and bottom "image caps"—images at the top or bottom of a card.
 
 {% capture example %}
 <div class="card mb-3">
@@ -378,8 +336,6 @@ Similar to headers and footers, cards can include top and bottom "image caps"—
 
 ### Image overlays
 
-Turn an image into a card background and overlay your card's text. Depending on the image, you may or may not need additional styles or utilities.
-
 {% capture example %}
 <div class="card bg-dark text-white">
   <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:Card image" alt="Card image">
@@ -394,11 +350,7 @@ Turn an image into a card background and overlay your card's text. Depending on 
 
 ## Card styles
 
-Cards include various options for customizing their backgrounds, borders, and color.
-
 ### Background and color
-
-Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/) to change the appearance of a card.
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
@@ -416,8 +368,6 @@ Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version
 
 ### Border
 
-Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/borders/) to change just the `border-color` of a card. Note that you can put `.text-{color}` classes on the parent `.card` or a subset of the card's contents as shown below.
-
 {% capture example %}
 {% for color in site.data.theme-colors %}
 <div class="card border-{{ color.name }} mb-3" style="max-width: 18rem;">
@@ -431,8 +381,6 @@ Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities
 {% include example.html content=example %}
 
 ### Mixins utilities
-
-You can also change the borders on the card header and footer as needed, and even remove their `background-color` with `.bg-transparent`.
 
 {% capture example %}
 <div class="card border-success mb-3" style="max-width: 18rem;">
@@ -448,11 +396,7 @@ You can also change the borders on the card header and footer as needed, and eve
 
 ## Card layout
 
-In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
-
 ### Card groups
-
-Use card groups to render cards as a single, attached element with equal width and height columns. Card groups use `display: flex;` to achieve their uniform sizing.
 
 {% capture example %}
 <div class="card-group">
@@ -524,8 +468,6 @@ When using card groups with footers, their content will automatically line up.
 
 ### Card decks
 
-Need a set of equal width and height cards that aren't attached to one another? Use card decks.
-
 {% capture example %}
 <div class="card-deck">
   <div class="card">
@@ -596,10 +538,6 @@ Just like with card groups, card footers in decks will automatically line up.
 
 ### Card columns
 
-Cards can be organized into [Masonry](https://masonry.desandro.com/)-like columns with just CSS by wrapping them in `.card-columns`. Cards are built with CSS `column` properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.
-
-**Heads up!** Your mileage with card columns may vary. To prevent cards breaking across columns, we must set them to `display: inline-block` as `column-break-inside: avoid` isn't a bulletproof solution yet.
-
 {% capture example %}
 <div class="card-columns">
   <div class="card">
@@ -667,16 +605,3 @@ Cards can be organized into [Masonry](https://masonry.desandro.com/)-like column
 </div>
 {% endcapture %}
 {% include example.html content=example %}
-
-Card columns can also be extended and customized with some additional code. Shown below is an extension of the `.card-columns` class using the same CSS we use—CSS columns— to generate a set of responsive tiers for changing the number of columns.
-
-{% highlight scss %}
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-}
-{% endhighlight %}
